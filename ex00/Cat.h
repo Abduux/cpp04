@@ -3,34 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahraich <ahraich@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/22 19:11:16 by codespace         #+#    #+#             */
-/*   Updated: 2024/12/22 19:20:21 by ahraich          ###   ########.fr       */
+/*   Updated: 2024/12/23 05:13:31 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CAT_H
 #define CAT_H
 
+#include "Animal.h"
 
-class Cat
+class Cat : public Animal
 {
-    private:
-        /* data */
     public:
-        Cat(/* args */);
+        Cat();
+        Cat(const Cat& copy);
+        Cat &operator=(const Cat& copy);
         ~Cat();
-        
 };
-
-Cat::Cat(/* args */)
-{
-}
-
-Cat::~Cat()
-{
-}
 
 
 #endif

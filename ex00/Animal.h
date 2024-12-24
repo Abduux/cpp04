@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahraich <ahraich@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/22 19:03:57 by codespace         #+#    #+#             */
-/*   Updated: 2024/12/22 19:35:59 by ahraich          ###   ########.fr       */
+/*   Updated: 2024/12/23 05:02:21 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,50 +22,13 @@ class Animal
         
     public:
         Animal(); // default
-        Animal(std::string _type);
-        Animal(const Animal &lhs_copy);
-        Animal& operator=(const Animal &lhs);
-        ~Animal();
+        Animal(std::string _type); // main constructor
+        Animal(const Animal &lhs_copy); // copy constructor
+        Animal& operator=(const Animal &lhs); // copy assignment 
+        ~Animal(); // destructor 
 
-        void makeSound();
-        void getType();
+        void makeSound() const;
+        const std::string& getType() const;
 };
-
-Animal::Animal() // default constructor
-{
-    
-}
-
-Animal::Animal(std::string _type) // main constructor
-{
-    
-}
-
-Animal::Animal(const Animal &copy) // copy constructor
-{
-    
-}
-
-Animal& Animal::operator=(const Animal &lhs) // copy assignment operator overload
-{
-    
-}
-
-
-
-Animal::~Animal() // destructor
-{
-}
-
-
-
-
-
-void Animal::makeSound()
-{
-    
-}
-
-
 
 #endif

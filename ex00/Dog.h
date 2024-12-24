@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahraich <ahraich@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/22 19:13:12 by ahraich           #+#    #+#             */
-/*   Updated: 2024/12/22 19:13:56 by ahraich          ###   ########.fr       */
+/*   Updated: 2024/12/23 05:13:34 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,13 @@
 
 #include "Animal.h"
 
-class Dog
+class Dog : public Animal
 {
-    private:
-        /* data */
     public:
-        Dog(/* args */);
+        Dog();
+        Dog(const Dog& copy);
+        Dog &operator=(const Dog& copy);
         ~Dog();
 };
-
-Dog::Dog(/* args */)
-{
-}
-
-Dog::~Dog()
-{
-}
-
 
 #endif
